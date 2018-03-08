@@ -1,23 +1,28 @@
 {
   "development": {
-    "username": "root",
+    "username": "margi",
     "password": null,
-    "database": "database_development",
+    "database": "tinyurl",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "postgres",
+    "pool":{
+      "max":"100",
+      "min":"1",
+      "acquire":"1000"
+    }
   },
   "test": {
-    "username": "root",
+    "username": "margi",
     "password": null,
-    "database": "database_test",
+    "database": "tinyurl_test",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "postgres"
   },
   "production": {
-    "username": "root",
+    "username": "margi",
     "password": null,
-    "database": "database_production",
+    "database": "tinyurl_production",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "postgres"
   }
 }
