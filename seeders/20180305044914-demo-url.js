@@ -7,7 +7,7 @@ const bases = require('bases');
 function getUrlArray() {
   const urlObj = {};
   let urlArray = [];
-  for (let i = 0; i < 1000000; i += 1) {
+  for (let i = 0; i < 100000; i += 1) {
     const num = `${i}`.padStart(6, '0');
     const long_url = `http://margi.com/${num}`;
     let head = 0;
