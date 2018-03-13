@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "NODE_ENV=test sequelize db:migrate:undo:all && NODE_ENV=test sequelize db:migrate  && NODE_ENV=test jest --coverage --forceExit",
-    "start": "node server.js"
+    "start": "node server.js",
+    "ci_test": "NODE_ENV=ci_test sequelize db:migrate:undo:all && NODE_ENV=ci_test sequelize db:migrate && NODE_ENV=ci_test sequelize db:seed:undo:all && NODE_ENV=ci_test sequelize db:seed:all && NODE_ENV=ci_test node_modules/.bin/jest --coverage --runInBand --forceExit"
   },
   "author": "",
   "license": "ISC",
